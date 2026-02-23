@@ -6,6 +6,7 @@ Mini project to scrape and compare car prices from websites.
 - Python
 - BeautifulSoup
 - HTTPX
+- playwright
 
  Goal
 Learn web scraping and build a simple price comparison interface.
