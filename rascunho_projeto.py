@@ -1,10 +1,8 @@
 import asyncio
 from playwright.async_api import async_playwright
+import json
 
-dict = {
-    "Nome": str,
-    "Preco": int
-}
+data = []
 
 async def coletando_precos_napista():
     async with async_playwright() as p:
@@ -17,9 +15,19 @@ async def coletando_precos_napista():
         todos_carros = await card_locator.all() # apartir daqui ele varre o hmtl e transforma em uma lista
         print(f"foram encotrados {len(todos_carros)} cards de carros")
         for carro in todos_carros:
-            nome = await carro.locator('h2.styles_listingCardContentTitle__AWk2f').inner_text()
+            nomes = await carro.locator('h2.styles_listingCardContentTitle__AWk2f').inner_text()
             precos = await carro.locator('span.typo--heading:has-text("R$")').inner_text()
-            print(f"nome: {nome} Preco Atual: {precos}")
+            print(f"nome: {nomes} Preco Atual: {precos}")
+            dados_do_carro = {
+                "nome": nomes,
+                "precos": precos
+            }
+            data.append(dados_do_carro)
+            
+        # <--- MUDANÇA DE IDENTAÇÃO: O bloco abaixo foi movido para fora (para a esquerda)
+        with open('output_rascunho.json', 'a', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+                    
         await browser.close()
 
  
@@ -35,9 +43,19 @@ async def coletando_precos_localiza_seminovos():
         todos_carros = await card_locator.all() # apartir daqui ele varre o hmtl e transforma em uma lista
         print(f"foram encotrados {len(todos_carros)} cards de carros")
         for carro in todos_carros:
-            nome = await carro.locator('span.MuiTypography-root').inner_text()
+            nomes = await carro.locator('span.MuiTypography-root').inner_text()
             precos = await carro.locator('h3.MuiTypography-root:has-text("R$")').inner_text()
-            print(f"nome: {nome} Preco Atual: {precos}")
+            print(f"nome: {nomes} Preco Atual: {precos}")
+            dados_do_carro = {
+                "nome": nomes,
+                "preco": precos
+            }
+            data.append(dados_do_carro)
+
+        # <--- MUDANÇA DE IDENTAÇÃO: O bloco abaixo foi movido para fora (para a esquerda)
+        with open('output_rascunho.json', 'a', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+            
         await browser.close()
 
 
@@ -57,15 +75,22 @@ async def coletando_precos_chave_na_mao():
         todos_carros = await card_locator.all() # all junta tudo carregado em uma lista
         print(f"foram encotrados {len(todos_carros)} cards de carros") # como defini card_locator como lista ele precisa do len, pq nao consegue comparar um numero com uma lista
         for carro in todos_carros[:20]:
-            try:
-                await page.mouse.wheel(0, 4000)
-                await page.wait_for_timeout(2000)
-                await carro.scroll_into_view_if_needed()
-                await page.wait_for_timeout(1000)
-                nome = await carro.locator('b.ellipses').inner_text()
-                precos = await carro.locator('p.style_price__e3ffu:has-text("R$")').inner_text()
-                print(f"Nome do Caroo: {nome} - Preco Atual: {precos}")
-            except: continue
+            await page.mouse.wheel(0, 4000)
+            await page.wait_for_timeout(2000)
+            await carro.scroll_into_view_if_needed()
+            await page.wait_for_timeout(1000)
+            nomes = await carro.locator('b.ellipses').inner_text()
+            precos = await carro.locator('p.style_price__e3ffu:has-text("R$")').inner_text()
+            print(f"Nome: {nomes} - Preco Atual: {precos}")
+            dados_do_carro = {
+            "nome": nomes,
+            "preco": precos
+            }
+            data.append(dados_do_carro)
+
+        # <--- MUDANÇA DE IDENTAÇÃO: O bloco abaixo foi movido para fora (para a esquerda)
+        with open('output_rascunho.json', 'a', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
         await browser.close()
 
 
