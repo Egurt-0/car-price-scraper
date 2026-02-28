@@ -389,12 +389,8 @@
         "preco": "R$ 122.490"
     },
     {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": "R$ 122.490"
-    },
-    {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": "R$ 122.490"
+        "nome": "LT 1.0 12V FLEX MANUAL",
+        "preco": "R$ 72.490"
     },
     {
         "nome": "LT 1.0 12V TURBO FLEX AUTOMATICO",
@@ -423,6 +419,10 @@
     {
         "nome": "PLUS LT 1.0 12V FLEX MANUAL",
         "preco": "R$ 76.990"
+    },
+    {
+        "nome": "DRIVE 1.3 8V FLEX MANUAL",
+        "preco": "R$ 86.990"
     },
     {
         "nome": "TRACK 1.0 12V FLEX MANUAL",
@@ -654,12 +654,8 @@
         "preco": "R$ 122.490"
     },
     {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": "R$ 122.490"
-    },
-    {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": "R$ 122.490"
+        "nome": "LT 1.0 12V FLEX MANUAL",
+        "preco": "R$ 72.490"
     },
     {
         "nome": "LT 1.0 12V TURBO FLEX AUTOMATICO",
@@ -688,6 +684,10 @@
     {
         "nome": "PLUS LT 1.0 12V FLEX MANUAL",
         "preco": "R$ 76.990"
+    },
+    {
+        "nome": "DRIVE 1.3 8V FLEX MANUAL",
+        "preco": "R$ 86.990"
     },
     {
         "nome": "TRACK 1.0 12V FLEX MANUAL",
@@ -722,83 +722,75 @@
         "preco": "R$ 72.490"
     },
     {
-        "nome": "Kia Sportage",
-        "preco": "48x R$ 2.299\n+ Entrada de R$ 17.990"
+        "nome": "Peugeot 208 Griffe 1.6 Flex 16V 5p Aut. - Branco - 2016",
+        "preco": " 54.900"
     },
     {
-        "nome": "Volkswagen Polo",
-        "preco": "R$ 79.190"
+        "nome": "VolksWagen up! SPEED 1.0 TSI T. Flex 12V 5p - Branco - 2017",
+        "preco": " 59.900"
     },
     {
-        "nome": "Renault Sandero",
-        "preco": "R$ 42.990\nAceita Troca"
+        "nome": "VolksWagen Gol City (Trend) 1.0 Mi Total Flex 8V 2p - Prata - 2014",
+        "preco": " 26.900"
     },
     {
-        "nome": "Volkswagen T-cross",
-        "preco": "R$ 91.990\nAceita Troca"
+        "nome": "VolksWagen Polo 1.0 Flex 12V 5p - Prata - 2020",
+        "preco": " 63.900"
     },
     {
-        "nome": "Chevrolet Onix",
-        "preco": "R$ 98.490"
+        "nome": "Audi Q5 Ambiente 2.0 TFSI Quattro S tronic - Preto - 2018",
+        "preco": " 129.900"
     },
     {
-        "nome": "Renault Logan",
-        "preco": "R$ 51.399"
+        "nome": "Chevrolet ONIX HATCH LT 1.0 12V TB Flex 5p Mec. - Prata - 2023",
+        "preco": " 74.900"
     },
     {
-        "nome": "Renault Kwid",
-        "preco": "R$ 61.790"
+        "nome": "VolksWagen Gol 1.0 Flex 12V 5p - Branco - 2022",
+        "preco": " 51.900"
     },
     {
-        "nome": "Jeep Compass",
-        "preco": "R$ 105.999"
+        "nome": "Honda Civic Sedan LXR 2.0 Flexone 16V Aut. 4p - Branco - 2014",
+        "preco": " 73.900"
     },
     {
-        "nome": "Chevrolet Cruze",
-        "preco": "60x R$ 1.200\n+ Entrada de R$ 2.000"
+        "nome": "Fiat MOBI LIKE 1.0 Fire Flex 5p. - Prata - 2023",
+        "preco": " 54.900"
     },
     {
-        "nome": "Chevrolet Spin",
-        "preco": "R$ 82.899"
+        "nome": "Fiat Palio Week. ATTRACTIVE 1.4 Fire Flex 8V - Bege - 2014",
+        "preco": " 45.900"
     },
     {
-        "nome": "Chevrolet Onix",
-        "preco": "R$ 72.490"
+        "nome": "Jeep COMPASS SPORT T270 1.3 TB 4x2 Flex Aut. - Preto - 2026",
+        "preco": " 145.900"
     },
     {
-        "nome": "Smart Fortwo",
-        "preco": "R$ 56.790"
+        "nome": "VolksWagen up! move 1.0 TSI Total Flex 12V 5p - Branco - 2019",
+        "preco": " 61.900"
     },
     {
-        "nome": "Fiat Doblo",
-        "preco": "R$ 53.900\nAceita Troca"
+        "nome": "Caoa Chery/Chery Tiggo 7 TXS 1.5 16V Turbo Flex Aut. - Branco - 2022",
+        "preco": " 105.900"
     },
     {
-        "nome": "Chevrolet Onix",
-        "preco": "R$ 81.590"
+        "nome": "Jeep COMPASS LONG. T270 1.3 TB 4x2 Flex Aut. - Preto - 2022",
+        "preco": " 122.900"
     },
     {
-        "nome": "Hyundai Tucson",
-        "preco": "R$ 75.790"
+        "nome": "Chevrolet SPIN ACTIV 1.8 8V Econo. Flex 5p Mec. - Branco - 2015",
+        "preco": " 55.900"
     },
     {
-        "nome": "Chevrolet Classic",
-        "preco": "R$ 26.900\nAceita Troca"
+        "nome": "VolksWagen Polo Comfortline TSI 1.0 Flex 12V Aut. - Prata - 2024",
+        "preco": " 89.900"
     },
     {
-        "nome": "Jeep Compass",
-        "preco": "R$ 138.490"
+        "nome": "Chevrolet ONIX HATCH LT 1.0 12V Flex 5p Mec. - Cinza - 2024",
+        "preco": " 67.900"
     },
     {
-        "nome": "Toyota Corolla",
-        "preco": "R$ 36.990"
-    },
-    {
-        "nome": "Renault Logan",
-        "preco": "R$ 44.799"
-    },
-    {
-        "nome": "Volvo Xc 40",
-        "preco": "R$ 187.000\nAceita Troca"
+        "nome": "Fiat MOBI LIKE 1.0 Fire Flex 5p. - Cinza - 2023",
+        "preco": " 53.900"
     }
 ]
