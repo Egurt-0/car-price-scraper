@@ -3,6 +3,8 @@ from playwright.async_api import async_playwright
 import json
 from pymongo import MongoClient
 
+
+
     
 
 conexao = MongoClient('mongodb://localhost:27017')
@@ -25,14 +27,17 @@ async def coletando_precos_napista():
             nomes = await carro.locator('h2.styles_listingCardContentTitle__AWk2f').inner_text()
             precos = await carro.locator('span.typo--heading:has-text("R$")').inner_text()
             precos_limpos = precos.replace("R$", "").replace(".", "").strip()
+            precos_int = int(precos_limpos)
             print(f"nome: {nomes} Preco Atual: {precos_limpos}")
             dados_do_carro = {
                 "nome": nomes,
-                "precos": precos_limpos
+                "precos": precos_int
             }
             data.append(dados_do_carro)
         if data:
             colecao.insert_many(data)
+        for doc in data:
+            doc.pop("_id", None)
             print(len(f"{len(data)}, dados salvos no mongodb"))
         # <--- MUDANÇA DE IDENTAÇÃO: O bloco abaixo foi movido para fora (para a esquerda)
         with open('output_rascunho.json', 'a', encoding='utf-8') as file:
@@ -56,14 +61,17 @@ async def coletando_precos_localiza_seminovos():
             nomes = await carro.locator('span.MuiTypography-root').inner_text()
             precos = await carro.locator('h3.MuiTypography-root:has-text("R$")').inner_text()
             precos_limpos = precos.replace("R$", "").replace(".", "").strip()
+            precos_int = int(precos_limpos)
             print(f"nome: {nomes} Preco Atual: {precos_limpos}")
             dados_do_carro = {
                 "nome": nomes,
-                "preco": precos_limpos
+                "preco": precos_int
             }
             data.append(dados_do_carro)
         if data:
             colecao.insert_many(data)
+        for doc in data:
+            doc.pop("_id", None)
         # <--- MUDANÇA DE IDENTAÇÃO: O bloco abaixo foi movido para fora (para a esquerda)
         with open('output_rascunho.json', 'a', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
@@ -85,14 +93,17 @@ async def coletando_precos_localiza_olx():
             nomes = await carro.locator('p.fw-bold').inner_text()
             precos = await carro.locator('strong.fs-4').inner_text()
             precos_limpos = precos.replace("R$", "").replace(".", "").strip()
-            print(f"nome: {nomes} Preco Atual: {precos_limpos}")
+            precos_int = int(precos_limpos)
+            print(f"nome: {nomes} Preco Atual: {precos_int}")
             dados_do_carro = {
                 "nome": nomes,
-                "preco": precos_limpos
+                "preco": precos_int
             }
             data.append(dados_do_carro)
         if data:
             colecao.insert_many(data)
+        for doc in data:
+            doc.pop("_id", None)
         # <--- MUDANÇA DE IDENTAÇÃO: O bloco abaixo foi movido para fora (para a esquerda)
         with open('output_rascunho.json', 'a', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
@@ -105,4 +116,3 @@ async def coletando_precos_localiza_olx():
 asyncio.run(coletando_precos_napista())
 asyncio.run(coletando_precos_localiza_seminovos())
 asyncio.run(coletando_precos_localiza_olx())
-
