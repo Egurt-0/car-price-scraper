@@ -7,7 +7,8 @@ Mini project to scrape and compare car prices from websites.
 - BeautifulSoup
 - HTTPX
 - playwright
-- NextJs
+- streamlit
+  
 
  Goal
 Learn web scraping and build a simple price comparison interface.
