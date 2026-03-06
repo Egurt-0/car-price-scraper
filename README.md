@@ -8,6 +8,7 @@ Mini project to scrape and compare car prices from websites.
 - HTTPX
 - playwright
 - streamlit
+- Json
   
 
  Goal
