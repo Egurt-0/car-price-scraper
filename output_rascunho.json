@@ -1,404 +1,388 @@
-[
+[][
     {
-        "nome": "Chevrolet Celta",
-        "precos": 29000
-    },
-    {
-        "nome": "Peugeot 207",
-        "precos": 25990
+        "nome": "Ford Focus",
+        "preco": 25900
     },
     {
         "nome": "Volkswagen Gol",
-        "precos": 26900
+        "preco": 22990
     },
     {
-        "nome": "Fiat Uno Mille",
-        "precos": 27900
+        "nome": "Renault Sandero",
+        "preco": 29900
     },
     {
-        "nome": "Volkswagen Fox",
-        "precos": 28900
-    },
-    {
-        "nome": "Chevrolet Astra",
-        "precos": 28500
+        "nome": "Chevrolet Zafira",
+        "preco": 25900
     },
     {
         "nome": "Volkswagen Gol",
-        "precos": 27099
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 25299
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 23900
+        "preco": 29900
     },
     {
         "nome": "Fiat Siena",
-        "precos": 23000
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 22999
-    },
-    {
-        "nome": "Chevrolet Meriva",
-        "precos": 25700
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 29900
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 23900
+        "preco": 26999
     },
     {
         "nome": "Fiat Siena",
-        "precos": 27590
-    },
-    {
-        "nome": "Jeep Compass",
-        "precos": 0
-    },
-    {
-        "nome": "Volkswagen Fox Plus",
-        "precos": 27900
-    },
-    {
-        "nome": "Fiat Uno",
-        "precos": 25900
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 24900
-    },
-    {
-        "nome": "Chevrolet Celta Life",
-        "precos": 23500
-    },
-    {
-        "nome": "Volkswagen Polo",
-        "precos": 28000
-    },
-    {
-        "nome": "Chevrolet Corsa",
-        "precos": 29900
-    },
-    {
-        "nome": "Ford Ka",
-        "precos": 23900
-    },
-    {
-        "nome": "Chevrolet Celta",
-        "precos": 15900
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 29900
-    },
-    {
-        "nome": "Chevrolet Cruze",
-        "precos": 0
+        "preco": 28800
     },
     {
         "nome": "Peugeot 207",
-        "precos": 16900
-    },
-    {
-        "nome": "Volkswagen Up",
-        "precos": 29000
-    },
-    {
-        "nome": "Chevrolet Classic",
-        "precos": 17900
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 30000
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 23990
-    },
-    {
-        "nome": "Ford Ka",
-        "precos": 22900
-    },
-    {
-        "nome": "Chevrolet Prisma",
-        "precos": 28900
-    },
-    {
-        "nome": "Ford Fiesta",
-        "precos": 29900
-    },
-    {
-        "nome": "Chevrolet Astra",
-        "precos": 27000
-    },
-    {
-        "nome": "Chery Qq",
-        "precos": 23900
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 25900
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 26000
-    },
-    {
-        "nome": "Chevrolet Prisma",
-        "precos": 28900
-    },
-    {
-        "nome": "Peugeot 207 Sw Escapade",
-        "precos": 24500
-    },
-    {
-        "nome": "Fiat Idea",
-        "precos": 28900
-    },
-    {
-        "nome": "Fiat Idea",
-        "precos": 28900
-    },
-    {
-        "nome": "Chevrolet Classic",
-        "precos": 23099
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 19900
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 21990
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 27199
-    },
-    {
-        "nome": "Renault Logan",
-        "precos": 29900
+        "preco": 19800
     },
     {
         "nome": "Citroen C3",
-        "precos": 29900
+        "preco": 25500
+    },
+    {
+        "nome": "Fiat Siena",
+        "preco": 21299
+    },
+    {
+        "nome": "Honda Fit",
+        "preco": 0
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 27299
+    },
+    {
+        "nome": "Fiat Uno",
+        "preco": 22799
+    },
+    {
+        "nome": "Chevrolet Meriva",
+        "preco": 29900
+    },
+    {
+        "nome": "Renault Clio",
+        "preco": 28900
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 20900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 30000
+    },
+    {
+        "nome": "Volkswagen Fox Plus",
+        "preco": 25900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 28900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29900
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 28900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 27399
+    },
+    {
+        "nome": "Peugeot 207",
+        "preco": 22900
+    },
+    {
+        "nome": "Citroen Aircross",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 26900
+    },
+    {
+        "nome": "Renault Clio",
+        "preco": 26990
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 23900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 24900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 23900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 21900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 21900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 28900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 14900
+    },
+    {
+        "nome": "Volkswagen Kombi",
+        "preco": 19900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 18900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29990
+    },
+    {
+        "nome": "Volkswagen Fox",
+        "preco": 27999
+    },
+    {
+        "nome": "Peugeot 207",
+        "preco": 25900
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 28990
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 27990
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29900
+    },
+    {
+        "nome": "Toyota Hilux",
+        "preco": 0
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 16900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 17900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 24990
+    },
+    {
+        "nome": "Subaru Legacy",
+        "preco": 14900
     }
 ][
     {
-        "nome": "Chevrolet Celta",
-        "precos": 29000
-    },
-    {
-        "nome": "Peugeot 207",
-        "precos": 25990
+        "nome": "Ford Focus",
+        "preco": 25900
     },
     {
         "nome": "Volkswagen Gol",
-        "precos": 26900
+        "preco": 22990
     },
     {
-        "nome": "Fiat Uno Mille",
-        "precos": 27900
+        "nome": "Renault Sandero",
+        "preco": 29900
     },
     {
-        "nome": "Volkswagen Fox",
-        "precos": 28900
-    },
-    {
-        "nome": "Chevrolet Astra",
-        "precos": 28500
+        "nome": "Chevrolet Zafira",
+        "preco": 25900
     },
     {
         "nome": "Volkswagen Gol",
-        "precos": 27099
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 25299
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 23900
+        "preco": 29900
     },
     {
         "nome": "Fiat Siena",
-        "precos": 23000
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 22999
-    },
-    {
-        "nome": "Chevrolet Meriva",
-        "precos": 25700
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 29900
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 23900
+        "preco": 26999
     },
     {
         "nome": "Fiat Siena",
-        "precos": 27590
-    },
-    {
-        "nome": "Jeep Compass",
-        "precos": 0
-    },
-    {
-        "nome": "Volkswagen Fox Plus",
-        "precos": 27900
-    },
-    {
-        "nome": "Fiat Uno",
-        "precos": 25900
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 24900
-    },
-    {
-        "nome": "Chevrolet Celta Life",
-        "precos": 23500
-    },
-    {
-        "nome": "Volkswagen Polo",
-        "precos": 28000
-    },
-    {
-        "nome": "Chevrolet Corsa",
-        "precos": 29900
-    },
-    {
-        "nome": "Ford Ka",
-        "precos": 23900
-    },
-    {
-        "nome": "Chevrolet Celta",
-        "precos": 15900
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 29900
-    },
-    {
-        "nome": "Chevrolet Cruze",
-        "precos": 0
+        "preco": 28800
     },
     {
         "nome": "Peugeot 207",
-        "precos": 16900
-    },
-    {
-        "nome": "Volkswagen Up",
-        "precos": 29000
-    },
-    {
-        "nome": "Chevrolet Classic",
-        "precos": 17900
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 30000
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 23990
-    },
-    {
-        "nome": "Ford Ka",
-        "precos": 22900
-    },
-    {
-        "nome": "Chevrolet Prisma",
-        "precos": 28900
-    },
-    {
-        "nome": "Ford Fiesta",
-        "precos": 29900
-    },
-    {
-        "nome": "Chevrolet Astra",
-        "precos": 27000
-    },
-    {
-        "nome": "Chery Qq",
-        "precos": 23900
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 25900
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 26000
-    },
-    {
-        "nome": "Chevrolet Prisma",
-        "precos": 28900
-    },
-    {
-        "nome": "Peugeot 207 Sw Escapade",
-        "precos": 24500
-    },
-    {
-        "nome": "Fiat Idea",
-        "precos": 28900
-    },
-    {
-        "nome": "Fiat Idea",
-        "precos": 28900
-    },
-    {
-        "nome": "Chevrolet Classic",
-        "precos": 23099
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 19900
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 21990
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 27199
-    },
-    {
-        "nome": "Renault Logan",
-        "precos": 29900
+        "preco": 19800
     },
     {
         "nome": "Citroen C3",
-        "precos": 29900
+        "preco": 25500
     },
     {
-        "nome": "LT 1.0 12V FLEX MANUAL",
-        "preco": 72490
+        "nome": "Fiat Siena",
+        "preco": 21299
     },
     {
-        "nome": "LIMITED PLUS FLEX 1.0 MANUAL",
-        "preco": 79490
+        "nome": "Honda Fit",
+        "preco": 0
     },
     {
-        "nome": "LT 1.0 12V TURBO FLEX AUTOMATICO",
-        "preco": 108990
+        "nome": "Volkswagen Gol",
+        "preco": 27299
     },
     {
-        "nome": "COMFORT PLUS TGDI FLEX 1.0 AUTOMATICO",
-        "preco": 96990
+        "nome": "Fiat Uno",
+        "preco": 22799
+    },
+    {
+        "nome": "Chevrolet Meriva",
+        "preco": 29900
+    },
+    {
+        "nome": "Renault Clio",
+        "preco": 28900
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 20900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 30000
+    },
+    {
+        "nome": "Volkswagen Fox Plus",
+        "preco": 25900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 28900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29900
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 28900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 27399
+    },
+    {
+        "nome": "Peugeot 207",
+        "preco": 22900
+    },
+    {
+        "nome": "Citroen Aircross",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 26900
+    },
+    {
+        "nome": "Renault Clio",
+        "preco": 26990
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 23900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 24900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 23900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 21900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 21900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 28900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 14900
+    },
+    {
+        "nome": "Volkswagen Kombi",
+        "preco": 19900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 18900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29990
+    },
+    {
+        "nome": "Volkswagen Fox",
+        "preco": 27999
+    },
+    {
+        "nome": "Peugeot 207",
+        "preco": 25900
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 28990
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 27990
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29900
+    },
+    {
+        "nome": "Toyota Hilux",
+        "preco": 0
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 16900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 17900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 24990
+    },
+    {
+        "nome": "Subaru Legacy",
+        "preco": 14900
     },
     {
         "nome": "PLUS LT 1.0 12V FLEX MANUAL",
@@ -407,18 +391,6 @@
     {
         "nome": "TRACK 1.0 12V FLEX - SM MANUAL",
         "preco": 72990
-    },
-    {
-        "nome": "LT 1.0 12V TURBO FLEX AUTOMATICO",
-        "preco": 108990
-    },
-    {
-        "nome": "TRACK 1.0 12V FLEX MANUAL",
-        "preco": 76990
-    },
-    {
-        "nome": "PLUS LT 1.0 12V FLEX MANUAL",
-        "preco": 76990
     },
     {
         "nome": "DRIVE 1.3 8V FLEX MANUAL",
@@ -433,8 +405,8 @@
         "preco": 98490
     },
     {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": 122490
+        "nome": "DRIVE 1.3 8V FLEX MANUAL",
+        "preco": 86990
     },
     {
         "nome": "PLUS LT 1.0 12V FLEX MANUAL",
@@ -449,221 +421,233 @@
         "preco": 72490
     },
     {
-        "nome": "HIGHLINE 1.4 250 TSI 16V TOTAL FLEX AUTOMATICO",
-        "preco": 146990
+        "nome": "PLUS LT 1.0 12V FLEX MANUAL",
+        "preco": 76990
     },
     {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": 122490
-    }
-][
-    {
-        "nome": "Chevrolet Celta",
-        "precos": 29000
+        "nome": "TRACK 1.0 12V FLEX MANUAL",
+        "preco": 76990
     },
     {
-        "nome": "Peugeot 207",
-        "precos": 25990
+        "nome": "PLUS LTZ 1.0 12V TURBO FLEX AUTOMATICO",
+        "preco": 98490
     },
     {
-        "nome": "Volkswagen Gol",
-        "precos": 26900
-    },
-    {
-        "nome": "Fiat Uno Mille",
-        "precos": 27900
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 28900
-    },
-    {
-        "nome": "Chevrolet Astra",
-        "precos": 28500
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 27099
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 25299
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 23900
-    },
-    {
-        "nome": "Fiat Siena",
-        "precos": 23000
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 22999
-    },
-    {
-        "nome": "Chevrolet Meriva",
-        "precos": 25700
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 29900
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 23900
-    },
-    {
-        "nome": "Fiat Siena",
-        "precos": 27590
-    },
-    {
-        "nome": "Jeep Compass",
-        "precos": 0
-    },
-    {
-        "nome": "Volkswagen Fox Plus",
-        "precos": 27900
-    },
-    {
-        "nome": "Fiat Uno",
-        "precos": 25900
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 24900
-    },
-    {
-        "nome": "Chevrolet Celta Life",
-        "precos": 23500
-    },
-    {
-        "nome": "Volkswagen Polo",
-        "precos": 28000
-    },
-    {
-        "nome": "Chevrolet Corsa",
-        "precos": 29900
-    },
-    {
-        "nome": "Ford Ka",
-        "precos": 23900
-    },
-    {
-        "nome": "Chevrolet Celta",
-        "precos": 15900
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 29900
-    },
-    {
-        "nome": "Chevrolet Cruze",
-        "precos": 0
-    },
-    {
-        "nome": "Peugeot 207",
-        "precos": 16900
-    },
-    {
-        "nome": "Volkswagen Up",
-        "precos": 29000
-    },
-    {
-        "nome": "Chevrolet Classic",
-        "precos": 17900
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 30000
-    },
-    {
-        "nome": "Fiat Palio",
-        "precos": 23990
-    },
-    {
-        "nome": "Ford Ka",
-        "precos": 22900
-    },
-    {
-        "nome": "Chevrolet Prisma",
-        "precos": 28900
-    },
-    {
-        "nome": "Ford Fiesta",
-        "precos": 29900
-    },
-    {
-        "nome": "Chevrolet Astra",
-        "precos": 27000
-    },
-    {
-        "nome": "Chery Qq",
-        "precos": 23900
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 25900
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 26000
-    },
-    {
-        "nome": "Chevrolet Prisma",
-        "precos": 28900
-    },
-    {
-        "nome": "Peugeot 207 Sw Escapade",
-        "precos": 24500
-    },
-    {
-        "nome": "Fiat Idea",
-        "precos": 28900
-    },
-    {
-        "nome": "Fiat Idea",
-        "precos": 28900
-    },
-    {
-        "nome": "Chevrolet Classic",
-        "precos": 23099
-    },
-    {
-        "nome": "Volkswagen Voyage",
-        "precos": 19900
-    },
-    {
-        "nome": "Volkswagen Fox",
-        "precos": 21990
-    },
-    {
-        "nome": "Volkswagen Gol",
-        "precos": 27199
-    },
-    {
-        "nome": "Renault Logan",
-        "precos": 29900
-    },
-    {
-        "nome": "Citroen C3",
-        "precos": 29900
-    },
-    {
-        "nome": "LT 1.0 12V FLEX MANUAL",
-        "preco": 72490
-    },
-    {
-        "nome": "LIMITED PLUS FLEX 1.0 MANUAL",
-        "preco": 79490
+        "nome": "TRACK 1.0 12V FLEX MANUAL",
+        "preco": 76990
     },
     {
         "nome": "LT 1.0 12V TURBO FLEX AUTOMATICO",
         "preco": 108990
     },
     {
-        "nome": "COMFORT PLUS TGDI FLEX 1.0 AUTOMATICO",
-        "preco": 96990
+        "nome": "TRACK 1.0 12V FLEX - SM MANUAL",
+        "preco": 72990
+    },
+    {
+        "nome": "PLUS LTZ 1.0 12V TURBO FLEX AUTOMATICO",
+        "preco": 98490
+    },
+    {
+        "nome": "TRACK 1.0 12V FLEX MANUAL",
+        "preco": 76990
+    },
+    {
+        "nome": "PLUS LTZ 1.0 12V TURBO FLEX AUTOMATICO",
+        "preco": 98490
+    }
+][
+    {
+        "nome": "Ford Focus",
+        "preco": 25900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 22990
+    },
+    {
+        "nome": "Renault Sandero",
+        "preco": 29900
+    },
+    {
+        "nome": "Chevrolet Zafira",
+        "preco": 25900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 29900
+    },
+    {
+        "nome": "Fiat Siena",
+        "preco": 26999
+    },
+    {
+        "nome": "Fiat Siena",
+        "preco": 28800
+    },
+    {
+        "nome": "Peugeot 207",
+        "preco": 19800
+    },
+    {
+        "nome": "Citroen C3",
+        "preco": 25500
+    },
+    {
+        "nome": "Fiat Siena",
+        "preco": 21299
+    },
+    {
+        "nome": "Honda Fit",
+        "preco": 0
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 27299
+    },
+    {
+        "nome": "Fiat Uno",
+        "preco": 22799
+    },
+    {
+        "nome": "Chevrolet Meriva",
+        "preco": 29900
+    },
+    {
+        "nome": "Renault Clio",
+        "preco": 28900
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 20900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 30000
+    },
+    {
+        "nome": "Volkswagen Fox Plus",
+        "preco": 25900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 28900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29900
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 28900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 27399
+    },
+    {
+        "nome": "Peugeot 207",
+        "preco": 22900
+    },
+    {
+        "nome": "Citroen Aircross",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 26900
+    },
+    {
+        "nome": "Renault Clio",
+        "preco": 26990
+    },
+    {
+        "nome": "Chevrolet Prisma",
+        "preco": 23900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 24900
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 23900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 21900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 21900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 28900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 14900
+    },
+    {
+        "nome": "Volkswagen Kombi",
+        "preco": 19900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 18900
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29990
+    },
+    {
+        "nome": "Volkswagen Fox",
+        "preco": 27999
+    },
+    {
+        "nome": "Peugeot 207",
+        "preco": 25900
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 28990
+    },
+    {
+        "nome": "Chevrolet Classic",
+        "preco": 27990
+    },
+    {
+        "nome": "Fiat Palio",
+        "preco": 29900
+    },
+    {
+        "nome": "Toyota Hilux",
+        "preco": 0
+    },
+    {
+        "nome": "Volkswagen Gol",
+        "preco": 16900
+    },
+    {
+        "nome": "Ford Fiesta",
+        "preco": 27900
+    },
+    {
+        "nome": "Chevrolet Celta",
+        "preco": 17900
+    },
+    {
+        "nome": "Chevrolet Corsa",
+        "preco": 24990
+    },
+    {
+        "nome": "Subaru Legacy",
+        "preco": 14900
     },
     {
         "nome": "PLUS LT 1.0 12V FLEX MANUAL",
@@ -672,18 +656,6 @@
     {
         "nome": "TRACK 1.0 12V FLEX - SM MANUAL",
         "preco": 72990
-    },
-    {
-        "nome": "LT 1.0 12V TURBO FLEX AUTOMATICO",
-        "preco": 108990
-    },
-    {
-        "nome": "TRACK 1.0 12V FLEX MANUAL",
-        "preco": 76990
-    },
-    {
-        "nome": "PLUS LT 1.0 12V FLEX MANUAL",
-        "preco": 76990
     },
     {
         "nome": "DRIVE 1.3 8V FLEX MANUAL",
@@ -698,8 +670,8 @@
         "preco": 98490
     },
     {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": 122490
+        "nome": "DRIVE 1.3 8V FLEX MANUAL",
+        "preco": 86990
     },
     {
         "nome": "PLUS LT 1.0 12V FLEX MANUAL",
@@ -714,24 +686,68 @@
         "preco": 72490
     },
     {
-        "nome": "HIGHLINE 1.4 250 TSI 16V TOTAL FLEX AUTOMATICO",
-        "preco": 146990
+        "nome": "PLUS LT 1.0 12V FLEX MANUAL",
+        "preco": 76990
     },
     {
-        "nome": "1.0 200 TSI 12V TOTAL FLEX AUTOMATICO",
-        "preco": 122490
+        "nome": "TRACK 1.0 12V FLEX MANUAL",
+        "preco": 76990
     },
     {
-        "nome": "Peugeot 208 Griffe 1.6 Flex 16V 5p Aut. - Branco - 2016",
-        "preco": 54900
+        "nome": "PLUS LTZ 1.0 12V TURBO FLEX AUTOMATICO",
+        "preco": 98490
+    },
+    {
+        "nome": "TRACK 1.0 12V FLEX MANUAL",
+        "preco": 76990
+    },
+    {
+        "nome": "LT 1.0 12V TURBO FLEX AUTOMATICO",
+        "preco": 108990
+    },
+    {
+        "nome": "TRACK 1.0 12V FLEX - SM MANUAL",
+        "preco": 72990
+    },
+    {
+        "nome": "PLUS LTZ 1.0 12V TURBO FLEX AUTOMATICO",
+        "preco": 98490
+    },
+    {
+        "nome": "TRACK 1.0 12V FLEX MANUAL",
+        "preco": 76990
+    },
+    {
+        "nome": "PLUS LTZ 1.0 12V TURBO FLEX AUTOMATICO",
+        "preco": 98490
+    },
+    {
+        "nome": "Fiat Strada Endurance 1.4 Flex 8V CS Plus - Prata - 2021",
+        "preco": 66900
+    },
+    {
+        "nome": "Ford EcoSport STORM 2.0 4WD 16V Flex 5p Aut. - Branco - 2021",
+        "preco": 82900
+    },
+    {
+        "nome": "Renault DUSTER OROCH Express 1.6 Flex 16V Mec. - Branco - 2021",
+        "preco": 74900
+    },
+    {
+        "nome": "Chevrolet ONIX SEDAN Plus LT 1.0 12V TB Flex Aut. - Prata - 2023",
+        "preco": 78900
+    },
+    {
+        "nome": "Renault LOGAN Zen Flex 1.0 12V 4p Mec. - Branco - 2022",
+        "preco": 57900
+    },
+    {
+        "nome": "Toyota ETIOS X 1.3 Flex 16V 5p Mec. - Branco - 2020",
+        "preco": 59900
     },
     {
         "nome": "VolksWagen up! SPEED 1.0 TSI T. Flex 12V 5p - Branco - 2017",
         "preco": 59900
-    },
-    {
-        "nome": "VolksWagen Gol City (Trend) 1.0 Mi Total Flex 8V 2p - Prata - 2014",
-        "preco": 26900
     },
     {
         "nome": "VolksWagen Polo 1.0 Flex 12V 5p - Prata - 2020",
@@ -750,16 +766,8 @@
         "preco": 51900
     },
     {
-        "nome": "Honda Civic Sedan LXR 2.0 Flexone 16V Aut. 4p - Branco - 2014",
-        "preco": 73900
-    },
-    {
         "nome": "Fiat MOBI LIKE 1.0 Fire Flex 5p. - Prata - 2023",
         "preco": 54900
-    },
-    {
-        "nome": "Fiat Palio Week. ATTRACTIVE 1.4 Fire Flex 8V - Bege - 2014",
-        "preco": 45900
     },
     {
         "nome": "Jeep COMPASS SPORT T270 1.3 TB 4x2 Flex Aut. - Preto - 2026",
@@ -774,20 +782,12 @@
         "preco": 105900
     },
     {
-        "nome": "Jeep COMPASS LONG. T270 1.3 TB 4x2 Flex Aut. - Preto - 2022",
-        "preco": 122900
-    },
-    {
         "nome": "Chevrolet SPIN ACTIV 1.8 8V Econo. Flex 5p Mec. - Branco - 2015",
         "preco": 55900
     },
     {
         "nome": "VolksWagen Polo Comfortline TSI 1.0 Flex 12V Aut. - Prata - 2024",
         "preco": 89900
-    },
-    {
-        "nome": "Chevrolet ONIX HATCH LT 1.0 12V Flex 5p Mec. - Cinza - 2024",
-        "preco": 67900
     },
     {
         "nome": "Fiat MOBI LIKE 1.0 Fire Flex 5p. - Cinza - 2023",

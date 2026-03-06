@@ -1,19 +1,24 @@
 import asyncio
-from playwright.async_api import async_playwright
 import json
 from pymongo import MongoClient
-
-
-
-    
 
 conexao = MongoClient('mongodb://localhost:27017')
 db = conexao.get_database("carros_info")
 colecao = db.get_collection('carros_nomes_precos')
 
+# objetivos
+# 
+# Função que pega links.
+
+# Função que entra no link e pega os dados.
+
+# Função principal que junta tudo
+
+
 data = []
 
-async def coletando_precos_napista():
+async def coletando_precos_napista(): 
+    from playwright.async_api import async_playwright # preciso importar em todas as funcões porque cada função é independente, e quando eu chamo uma função, ela não tem acesso as variáveis e importações da outra função, então preciso importar o playwright em cada função que eu quero usar ele
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
@@ -31,7 +36,7 @@ async def coletando_precos_napista():
             print(f"nome: {nomes} Preco Atual: {precos_limpos}")
             dados_do_carro = {
                 "nome": nomes,
-                "precos": precos_int
+                "preco": precos_int,
             }
             data.append(dados_do_carro)
         if data:
@@ -48,6 +53,7 @@ async def coletando_precos_napista():
  
 
 async def coletando_precos_localiza_seminovos():
+    from playwright.async_api import async_playwright
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
@@ -65,7 +71,7 @@ async def coletando_precos_localiza_seminovos():
             print(f"nome: {nomes} Preco Atual: {precos_limpos}")
             dados_do_carro = {
                 "nome": nomes,
-                "preco": precos_int
+                "preco": precos_int,
             }
             data.append(dados_do_carro)
         if data:
@@ -80,6 +86,7 @@ async def coletando_precos_localiza_seminovos():
 
 
 async def coletando_precos_localiza_olx():
+    from playwright.async_api import async_playwright
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         page = await browser.new_page()
@@ -97,7 +104,7 @@ async def coletando_precos_localiza_olx():
             print(f"nome: {nomes} Preco Atual: {precos_int}")
             dados_do_carro = {
                 "nome": nomes,
-                "preco": precos_int
+                "preco": precos_int,
             }
             data.append(dados_do_carro)
         if data:
@@ -112,7 +119,7 @@ async def coletando_precos_localiza_olx():
 
 
 
-
-asyncio.run(coletando_precos_napista())
-asyncio.run(coletando_precos_localiza_seminovos())
-asyncio.run(coletando_precos_localiza_olx())
+if  __name__ == "__main__": # serve para impedir que o código seja executado quando importado, e só execute quando for rodado diretamente
+    asyncio.run(coletando_precos_napista())
+    asyncio.run(coletando_precos_localiza_seminovos())
+    asyncio.run(coletando_precos_localiza_olx())
