@@ -47,9 +47,9 @@ autox_veiculos = {
     "indice_cor": 4
 }
 
-
 sites = [napista,seminovos_localiza,autox_veiculos] # lembra de adicionar o site a lista
 async def pegar_links():
+    links_com_locators = []
     for site in sites:
         from playwright.async_api import async_playwright
         async with async_playwright() as p:
@@ -60,10 +60,29 @@ async def pegar_links():
             locator_dos_links = page.locator(site["locator_dos_links"])
             await locator_dos_links.first.wait_for()
             todos_links = await locator_dos_links.all()
-            print(len(todos_links))
+            # informação opcional; comente se não quiser ver contagem de links
+            # print(len(todos_links))
             for link in todos_links:
                 link_final = await link.get_attribute('href') # os atributos de link sao sempre href, recomendo olhar no html do site
-                print(f"{site['prefixo']}{link_final}")
-            browser.close()
+                url_completa = f"{site['prefixo']}{link_final}"
+                site_locators = {
+                    "locator_preco": site["locator_preco"],
+                    "locator_nome": site["locator_nome"],
+                    "locator_ano": site["locator_ano"],
+                    "locator_km": site["locator_km"],
+                    "locator_cor": site["locator_cor"],
+                    "usa_nth": site["usa_nth"],
+                    "indice_ano": site["indice_ano"],
+                    "indice_km": site["indice_km"],
+                    "indice_cor": site["indice_cor"]
+                }
+                links_com_locators.append({
+                    "url": url_completa,
+                    "locators": site_locators
+                })
+            await browser.close()
+    return links_com_locators
 
-asyncio.run(pegar_links())
+
+if __name__ == "__main__":
+    asyncio.run(pegar_links())
