@@ -38,11 +38,11 @@ async def scraping_data():
                     "km": km,
                     "cor": cor
                 })
+                print("Salvo no json com sucesso")
                 await page.close()
             except Exception as e:
                 print(f"Erro ao processar {url}: {e}")
                 continue
-                        
         await browser.close()
     with open("output_scraping.json", "w", encoding="utf-8") as f:
         json.dump(infos_carros, f, ensure_ascii=False, indent=4)

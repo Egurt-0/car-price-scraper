@@ -1,19 +1,18 @@
-from pymongo import MongoClient
-import json
 import asyncio
 
 napista = {
     "URL": "https://napista.com.br/busca/carro/ate-30000-reais?utm_source=GoogleAds&utm_medium=PMax&utm_campaign=PMax&gclsrc=aw.ds&utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=22474505263&gclid=CjwKCAiA-__MBhAKEiwASBmsBGwllQ9e-AUFWUYrmqTDlTrCdKabk8AuHS4pLKGLhdDh3EMEJGfUyxoCAVEQAvD_BwE&pn=1",
     "locator_dos_links": "a.styles_listingCard__TnL78",
-    "prefixo": "napista.com.br",
-    "locator_preco": "div.sc-9bde1185-0 elZSMH",
-    "locator_nome": "h1.sc-9bde1185-0 kqJXUE",
-    "locator_ano": "div.sc-9bde1185-0 iQEUaK",
-    "locator_km": "div.sc-9bde1185-0 iQEUaK",
-    "locator_cor": "div.sc-9bde1185-0 iQEUaK",
-    "usa_nth": True,
-    "indice_ano": 1,
-    "indice_km": 2,
+    "prefixo": "https://napista.com.br",
+    "locator_preco": "div.sc-9bde1185-0:has-text('R$'')",
+    "locator_nome": "", # EEERRROO AQUIIII
+    "locator_ano": "", # EEERRROO AQUIIII
+    "locator_km": "div.sc-9bde1185-0:has-text('km')",
+    "locator_cor": "",# EEERRROO AQUIIII
+    "usa_nth": False, # os indicies estao sendo ignorado por conta do usar_nth ser False
+    "indice_nome": 1,  
+    "indice_ano": 2,
+    "indice_km": 3,
     "indice_cor": 4
 }
 
@@ -22,11 +21,12 @@ seminovos_localiza = {
     "locator_dos_links": "div.MuiGrid2-root a",
     "prefixo": "https://seminovos.localiza.com",
     "locator_preco": "div.MuiTypography-root.mui-12d4xyd p",
-    "locator_nome": "div.MuiTypography-root.mui-1w8tuy p",
+    "locator_nome": "div.MuiTypography-root.mui-1w8tuy p", # EEERRROO AQUIIII
     "locator_ano": "div.MuiTypography-root.mui-1k7px3r p",
     "locator_km": "div.MuiTypography-root.mui-1k7px3r p",
     "locator_cor": "h6.MuiTypography-root.mui-1phhdp6",
     "usa_nth": True,
+    "indice_nome": "",
     "indice_ano": 2 ,
     "indice_km": 3,
     "indice_cor": 4,
@@ -42,12 +42,13 @@ autox_veiculos = {
     "locator_km": "div.col-6 p",
     "locator_cor": "div.col-6 p" ,
     "usa_nth": True,
-    "indice_ano": 2,
-    "indice_km": 3,
-    "indice_cor": 4
-}
+    "indice_nome": "",
+    "indice_ano": 1,
+    "indice_km": 2,
+    "indice_cor": 3
+}               #SCRAPING FUNCIONANDO
 
-sites = [napista,seminovos_localiza,autox_veiculos] # lembra de adicionar o site a lista
+sites = [napista,autox_veiculos,seminovos_localiza] # lembra de adicionar o site a lista
 async def pegar_links():
     links_com_locators = []
     for site in sites:
@@ -55,8 +56,8 @@ async def pegar_links():
         async with async_playwright() as p:
             browser = await p.chromium.launch()
             page = await browser.new_page()
-            await page.goto(site["URL"],wait_until="load", timeout=60000)
-            page.set_default_timeout(timeout=60000)
+            await page.goto(site["URL"],wait_until="domcontentloaded", timeout=20000)
+            page.set_default_timeout(timeout=20000)
             locator_dos_links = page.locator(site["locator_dos_links"])
             await locator_dos_links.first.wait_for()
             todos_links = await locator_dos_links.all()
