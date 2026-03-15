@@ -1,15 +1,26 @@
 import asyncio
+olx = {
+    "URL": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios?utm_source=%20&utm_medium=cpc&utm_campaign=sebrissud_gg_pc_os_tf_ao_wb_at_ol_pf&gad_source=1",
+    "locator_dos_links": "a.olx-adcard__link",
+    "prefixo": "https://pr.olx.com.br",
+    "locator_preco": "#price-box-container.typo-title-medium span",
+    "locator_nome": "#description-title.typo-title-medium span",
+    "locator_ano": "#details.DS-Link a",
+    "locator_km": "#deitails.ad__sc-hj0yqs-0 span",
+    "locator_cor": "",
+    "usa_nth": False,
 
+}
 napista = {
     "URL": "https://napista.com.br/busca/carro/ate-30000-reais?utm_source=GoogleAds&utm_medium=PMax&utm_campaign=PMax&gclsrc=aw.ds&utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=22474505263&gclid=CjwKCAiA-__MBhAKEiwASBmsBGwllQ9e-AUFWUYrmqTDlTrCdKabk8AuHS4pLKGLhdDh3EMEJGfUyxoCAVEQAvD_BwE&pn=1",
     "locator_dos_links": "a.styles_listingCard__TnL78",
     "prefixo": "https://napista.com.br",
-    "locator_preco": "div.sc-9bde1185-0:has-text('R$'')",
-    "locator_nome": "", # EEERRROO AQUIIII
-    "locator_ano": "", # EEERRROO AQUIIII
+    "locator_preco": "#main div.sc-9bde1185-0:has-text('R$'')",
+    "locator_nome": "#main h1.sc-9bde1185-0",
+    "locator_ano": "#main div.sc-9bde1185-0",
     "locator_km": "div.sc-9bde1185-0:has-text('km')",
-    "locator_cor": "",# EEERRROO AQUIIII
-    "usa_nth": False, # os indicies estao sendo ignorado por conta do usar_nth ser False
+    "locator_cor": "#main div.sc-9bde1185-0",
+    "usa_nth": True, # os indicies sao ignorados quando a opcao usa_nth e falsa, entao pode deixar qualquer coisa aqui, mas recomnendo deixar os indices vazios se nao for usar
     "indice_nome": 1,  
     "indice_ano": 2,
     "indice_km": 3,
@@ -48,7 +59,7 @@ autox_veiculos = {
     "indice_cor": 3
 }               #SCRAPING FUNCIONANDO
 
-sites = [napista,autox_veiculos,seminovos_localiza] # lembra de adicionar o site a lista
+sites = [olx,napista,autox_veiculos,seminovos_localiza] # lembra de adicionar o site a lista
 async def pegar_links():
     links_com_locators = []
     for site in sites:
