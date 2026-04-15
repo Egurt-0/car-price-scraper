@@ -1,5 +1,17 @@
 import asyncio
 
+olx = {
+    "URL": "https://napista.com.br/busca/carro/ate-30000-reais?utm_source=GoogleAds&utm_medium=PMax&utm_campaign=PMax&gclsrc=aw.ds&utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=22474505263&gclid=CjwKCAiA-__MBhAKEiwASBmsBGwllQ9e-AUFWUYrmqTDlTrCdKabk8AuHS4pLKGLhdDh3EMEJGfUyxoCAVEQAvD_BwE&pn=1",
+    "locator_dos_links": "a.styles_listingCard__TnL78",
+    "prefixo": "https://napista.com.br",
+    "locator_preco": "div.sc-9bde1185-0:has-text('R$'')",
+    "locator_nome": "", # EEERRROO AQUIIII
+    "locator_ano": "", # EEERRROO AQUIIII
+    "locator_km": "div.sc-9bde1185-0:has-text('km')",
+    "locator_cor": "",# EEERRROO AQUIIII
+    "usa_nth": False
+}
+
 napista = {
     "URL": "https://napista.com.br/busca/carro/ate-30000-reais?utm_source=GoogleAds&utm_medium=PMax&utm_campaign=PMax&gclsrc=aw.ds&utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=22474505263&gclid=CjwKCAiA-__MBhAKEiwASBmsBGwllQ9e-AUFWUYrmqTDlTrCdKabk8AuHS4pLKGLhdDh3EMEJGfUyxoCAVEQAvD_BwE&pn=1",
     "locator_dos_links": "a.styles_listingCard__TnL78",
