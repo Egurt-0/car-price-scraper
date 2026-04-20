@@ -15,16 +15,11 @@ napista = {
     "URL": "https://napista.com.br/busca/carro/ate-30000-reais?utm_source=GoogleAds&utm_medium=PMax&utm_campaign=PMax&gclsrc=aw.ds&utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=22474505263&gclid=CjwKCAiA-__MBhAKEiwASBmsBGwllQ9e-AUFWUYrmqTDlTrCdKabk8AuHS4pLKGLhdDh3EMEJGfUyxoCAVEQAvD_BwE&pn=1",
     "locator_dos_links": "a.styles_listingCard__TnL78",
     "prefixo": "https://napista.com.br",
-    "locator_preco": "#main div.sc-9bde1185-0:has-text('R$'')",
+    "locator_preco": "//*[@id=__main/div/div[2]/div/div[2]/div[1]/div/div[1]/div[3]/div/div/div/div/div[1]/div[1]/div/div",
     "locator_nome": "#main h1.sc-9bde1185-0",
     "locator_ano": "#main div.sc-9bde1185-0",
     "locator_km": "div.sc-9bde1185-0:has-text('km')",
-    "locator_cor": "#main div.sc-9bde1185-0",
-    "usa_nth": True, # os indicies sao ignorados quando a opcao usa_nth e falsa, entao pode deixar qualquer coisa aqui, mas recomnendo deixar os indices vazios se nao for usar
-    "indice_nome": 1,  
-    "indice_ano": 2,
-    "indice_km": 3,
-    "indice_cor": 4
+    "locator_cor": "#main div.sc-9bde1185-0"
 }
 
 seminovos_localiza = {
@@ -35,12 +30,7 @@ seminovos_localiza = {
     "locator_nome": "div.MuiTypography-root.mui-1w8tuy p", # EEERRROO AQUIIII
     "locator_ano": "div.MuiTypography-root.mui-1k7px3r p",
     "locator_km": "div.MuiTypography-root.mui-1k7px3r p",
-    "locator_cor": "h6.MuiTypography-root.mui-1phhdp6",
-    "usa_nth": True,
-    "indice_nome": "",
-    "indice_ano": 2 ,
-    "indice_km": 3,
-    "indice_cor": 4,
+    "locator_cor": "h6.MuiTypography-root.mui-1phhdp6"
 }
 
 autox_veiculos = {
@@ -51,12 +41,7 @@ autox_veiculos = {
     "locator_nome": "div.title h3",
     "locator_ano": "div.col-6 p",
     "locator_km": "div.col-6 p",
-    "locator_cor": "div.col-6 p" ,
-    "usa_nth": True,
-    "indice_nome": "",
-    "indice_ano": 1,
-    "indice_km": 2,
-    "indice_cor": 3
+    "locator_cor": "div.col-6 p"
 }               #SCRAPING FUNCIONANDO
 
 sites = [olx,napista,autox_veiculos,seminovos_localiza] # lembra de adicionar o site a lista
