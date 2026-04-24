@@ -3,15 +3,15 @@ import json
 from func_pegar_infos import pegar_links
 
 
-infos_carros = []
+info_carros = {}
 async def scraping_data():
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
-        links_com_locators = await pegar_links()
+        links_e_locators = await pegar_links()
         browser = await p.chromium.launch()
-        for item in links_com_locators:
-            url = item["url"]
-            site_locators = item["locators"]
+        for info in links_e_locators:
+            url = info["url"]
+            site_locators = info["locators"]
             print(f"Processando {url}")
             
             
@@ -22,7 +22,7 @@ async def scraping_data():
             ano = await page.locator(site_locators["locator_ano"]).inner_text()
             km = await page.locator(site_locators["locator_km"]).inner_text()
             cor = await page.locator(site_locators["locator_cor"]).inner_text()
-            infos_carros.append({
+            info_carros.append({
                     "url": url,
                     "nome": nomes,
                     "preco": precos,
@@ -34,7 +34,7 @@ async def scraping_data():
             await page.close()
         await browser.close()
     with open("output_scraping.json", "w", encoding="utf-8") as f:
-        json.dump(infos_carros, f, ensure_ascii=False, indent=4)
+        json.dump(info_carros, f, ensure_ascii=False, indent=4)
 
         
 

@@ -16,10 +16,10 @@ napista = {
     "locator_dos_links": "a.styles_listingCard__TnL78",
     "prefixo": "https://napista.com.br",
     "locator_preco": "//*[@id=__main/div/div[2]/div/div[2]/div[1]/div/div[1]/div[3]/div/div/div/div/div[1]/div[1]/div/div",
-    "locator_nome": "#main h1.sc-9bde1185-0",
-    "locator_ano": "#main div.sc-9bde1185-0",
-    "locator_km": "div.sc-9bde1185-0:has-text('km')",
-    "locator_cor": "#main div.sc-9bde1185-0"
+    "locator_nome": '//*[@id="__main"]/div/div[1]/div/div[2]/div[1]/div/div[1]/div[2]/h1',
+    "locator_ano": '//*[@id="__main"]/div/div[1]/div/div[2]/div[1]/div/div[1]/div[5]/div[1]/ul/li[1]/div[2]',
+    "locator_km": '//*[@id="__main"]/div/div[1]/div/div[2]/div[1]/div/div[1]/div[5]/div[1]/ul/li[2]/div[2]',
+    "locator_cor": '//*[@id="__main"]/div/div[1]/div/div[2]/div[1]/div/div[1]/div[5]/div[1]/ul/li[5]/div[2]'
 }
 
 seminovos_localiza = {
@@ -44,9 +44,9 @@ autox_veiculos = {
     "locator_cor": "div.col-6 p"
 }               #SCRAPING FUNCIONANDO
 
-sites = [olx,napista,autox_veiculos,seminovos_localiza] # lembra de adicionar o site a lista
+sites = [napista,autox_veiculos,seminovos_localiza] # lembra de adicionar o site a lista
 async def pegar_links():
-    links_com_locators = []
+    links_e_locators = []
     for site in sites:
         from playwright.async_api import async_playwright
         async with async_playwright() as p:
@@ -67,18 +67,14 @@ async def pegar_links():
                     "locator_nome": site["locator_nome"],
                     "locator_ano": site["locator_ano"],
                     "locator_km": site["locator_km"],
-                    "locator_cor": site["locator_cor"],
-                    "usa_nth": site["usa_nth"],
-                    "indice_ano": site["indice_ano"],
-                    "indice_km": site["indice_km"],
-                    "indice_cor": site["indice_cor"]
+                    "locator_cor": site["locator_cor"]
                 }
-                links_com_locators.append({
+                links_e_locators.append({
                     "url": url_completa,
                     "locators": site_locators
                 })
             await browser.close()
-    return links_com_locators
+    return links_e_locators
 
 
 if __name__ == "__main__":
