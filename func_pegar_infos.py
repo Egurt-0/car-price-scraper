@@ -1,7 +1,7 @@
 import asyncio
 olx = {
     "URL": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios?utm_source=%20&utm_medium=cpc&utm_campaign=sebrissud_gg_pc_os_tf_ao_wb_at_ol_pf&gad_source=1",
-    "locator_dos_links": "/html/body/div/div[2]/main/div[3]/div[1]/main/div[9]/section[3]/div[1]/div[1]/a",
+    "locator_link": "/html/body/div/div[2]/main/div[3]/div[1]/main/div[9]/section[3]/div[1]/div[1]/a",
     "prefixo": "https://pr.olx.com.br",
     "locator_preco": "/html/body/div[1]/div/div[2]/div/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div/span/span",
     "locator_nome": "/html/body/div[1]/div/div[2]/div/div[1]/div[2]/div[1]/div[1]/h1",
@@ -12,7 +12,7 @@ olx = {
 }
 napista = {
     "URL": "https://napista.com.br/busca/carro/ate-30000-reais?utm_source=GoogleAds&utm_medium=PMax&utm_campaign=PMax&gclsrc=aw.ds&utm_source=google&utm_medium=cpc&gad_source=1&gad_campaignid=22474505263&gclid=CjwKCAiA-__MBhAKEiwASBmsBGwllQ9e-AUFWUYrmqTDlTrCdKabk8AuHS4pLKGLhdDh3EMEJGfUyxoCAVEQAvD_BwE&pn=1",
-    "locator_dos_links": "/html/body/div[1]/main/div/div[2]/div[3]/div/div[2]/div/div[2]/ul/li[2]/a",
+    "locator_link": "/html/body/div[1]/main/div/div[2]/div[3]/div/div[2]/div/div[2]/ul/li[2]/a",
     "prefixo": "https://napista.com.br",
     "locator_preco": "/html/body/div[1]/main/div/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/div/div/div/div/div[1]/div[1]/div/div",
     "locator_nome": '/html/body/div[1]/main/div/div[1]/div/div[2]/div[1]/div/div[1]/div[2]/h1',
@@ -23,7 +23,7 @@ napista = {
 
 seminovos_localiza = {
     "URL": "https://seminovos.localiza.com/carros/pr-curitiba?page=26",
-    "locator_dos_links": "/html/body/div[2]/main/div[4]/div[7]/div[2]/div[1]/div/a",
+    "locator_link": "/html/body/div[2]/main/div[4]/div[7]/div[2]/div[1]/div/a",
     "prefixo": "https://seminovos.localiza.com",
     "locator_preco": "/html/body/div[2]/main/div[5]/div/div[2]/div[3]/div[2]/p",
     "locator_nome": "/html/body/div[2]/main/div[5]/div/div[2]/div[1]/p",
@@ -34,7 +34,7 @@ seminovos_localiza = {
 
 autox_veiculos = {
     "URL" : "https://autoxveiculos.com.br/estoque?utm_source=GoogleAds&utm_medium=Kayron&utm_campaign=SEARCH&ad_id=789081271408&gad_source=1&gad_campaignid=23385700981&gclid=CjwKCAiAnoXNBhAZEiwAnItcG_9aICDqfBno0m_OL_rJq7wgnTMwsEwvBZlvNoBHT3PYMKiqz60L8hoCg-sQAvD_BwE",
-    "locator_dos_links": "/html/body/div[3]/div/div[2]/div[1]/div/a",
+    "locator_link": "/html/body/div[3]/div/div[2]/div[1]/div/a",
     "prefixo": "",  # esse site nao precisa de prefixo
     "locator_preco": "/html/body/div[3]/div[4]/div[1]/div[1]/div[1]/div[2]/strong",
     "locator_nome": "/html/body/div[3]/div[4]/div[1]/div[1]/div[1]/div[1]/div/div[2]/div/h3",
@@ -53,7 +53,12 @@ async def pegar_links():
             page = await browser.new_page()
             await page.goto(site["URL"],wait_until="domcontentloaded", timeout=20000)
             page.set_default_timeout(timeout=20000)
-            locator_dos_links = page.locator(site["locator_dos_links"])
+            contador = 0
+            locator_link = site["locator_link"]
+            for i in range(30):
+                contador +=1
+                locator_links = locator_link.replace("/div[1]", f"/div[{contador}]")
+            locator_dos_links = page.locator(locator_links) # <-----
             await locator_dos_links.first.wait_for()
             todos_links = await locator_dos_links.all()
             # informação opcional; comente se não quiser ver contagem de links

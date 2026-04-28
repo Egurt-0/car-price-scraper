@@ -1,9 +1,15 @@
 import asyncio
 import json
 from func_pegar_infos import pegar_links
+from pymongo import MongoClient
+
+conexao = MongoClient('mongodb://localhost:27017')
+db = conexao.get_database("carros_info")
+colecao = db.get_collection('carros_nomes_precos')
 
 
-info_carros = {}
+
+info_carros = []
 async def scraping_data():
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
@@ -22,10 +28,11 @@ async def scraping_data():
             ano = await page.locator(site_locators["locator_ano"]).inner_text()
             km = await page.locator(site_locators["locator_km"]).inner_text()
             cor = await page.locator(site_locators["locator_cor"]).inner_text()
+            precos_limpos = precos.replace("R$", "").replace(".", "").strip()
             info_carros.append({
                     "url": url,
                     "nome": nomes,
-                    "preco": precos,
+                    "preco": precos_limpos,
                     "ano": ano,
                     "km": km,
                     "cor": cor
@@ -33,8 +40,9 @@ async def scraping_data():
             print("Salvo no json com sucesso")
             await page.close()
         await browser.close()
-    with open("output_scraping.json", "w", encoding="utf-8") as f:
-        json.dump(info_carros, f, ensure_ascii=False, indent=4)
+    colecao.insert_many(info_carros)
+    with open("output_scraping.json", "w", encoding="utf-8") as file:
+        json.dump(info_carros, file, ensure_ascii=False, indent=4)
 
         
 

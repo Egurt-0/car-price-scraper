@@ -11,5 +11,5 @@ Mini project to scrape and compare car prices from websites.
 - Json
   
 
- Goal
+Goal
 Learn web scraping and build a simple price comparison interface.
