@@ -1,7 +1,3 @@
-
-
-from playwright.async_api import async_playwright
-
 def locators_links():
 
     contador = 0 
