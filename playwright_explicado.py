@@ -17,3 +17,5 @@ asyncio.run(main()) # para executar precisa usar o asyncio, para fazer o script 
 
 
 # tudo que conversa com o navegador é ASSINCRONO
+
+#teste
