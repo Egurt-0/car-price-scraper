@@ -10,7 +10,7 @@ async def site_auto_pecas():
         # Acessando a URL (com timeout aumentado para evitar erros de rede)
         url = "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios?utm_source=%20&utm_medium=cpc&utm_campaign=sebrissud_gg_pc_os_tf_ao_wb_at_ol_pf&gad_source=1"
         await page.goto(url, wait_until="domcontentloaded", timeout=120000)
-        locator_geral = page.locator("a.adcard-link", timeout=)
+        locator_geral = page.locator("a")
         total = await locator_geral.count()
         links = []
         for i in range(total):
