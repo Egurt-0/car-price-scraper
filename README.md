@@ -4,13 +4,9 @@ Mini project to scrape and compare car prices from websites.
 
  Technologies
 - Python
-- BeautifulSoup
-- HTTPX
 - playwright
-- streamlit
 - Json
   
 
  Goal
 Learn web scraping and build a simple price comparison interface.
---> I gave UP <--
