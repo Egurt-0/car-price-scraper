@@ -18,9 +18,14 @@ async def scraping_data():
                 page = await browser.new_page()
                 await page.goto(url)
                 
-                if site_locators["use_nth"] == True:
+                if site_locators["use_nth"]:
                     names = await page.locator(site_locators["name_locator"]).inner_text()
-                    prices = await page.locator(site_locators["price_locator"]).inner_text()
+                    for locator in site_locators["price_locator"]:
+                        try:
+                            prices = await page.locator(site_locators[locator]).inner_text()
+                        except Exception as e:
+                            print(e)
+                            continue
                     year = await page.locator(site_locators["year_locator"]).nth(site_locators["year_index"]).inner_text()
                     km = await page.locator(site_locators["km_locator"]).nth(site_locators["km_index"]).inner_text()
                     color = await page.locator(site_locators["color_locator"]).nth(site_locators["color_index"]).inner_text()
