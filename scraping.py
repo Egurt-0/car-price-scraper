@@ -20,9 +20,11 @@ async def scraping_data():
                     names = await page.locator(site_locators["name_locator"]).inner_text()
                     for locator in site_locators["price_locator"]:
                         try:
-                            prices = await page.locator(site_locators[locator]).inner_text()
+                            prices = await page.locator(locator).inner_text()
+                            if prices:
+                                break
                         except Exception as e:
-                            print(e)
+                            print(f"Price locator {locator} failed: {e}")
                             continue
                     year = await page.locator(site_locators["year_locator"]).nth(site_locators["year_index"]).inner_text()
                     km = await page.locator(site_locators["km_locator"]).nth(site_locators["km_index"]).inner_text()
