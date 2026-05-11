@@ -1,11 +1,10 @@
 import asyncio
 import json
 from extract_cards import get_links
-
+from playwright.async_api import async_playwright
 
 car_info = []
 async def scraping_data():
-    from playwright.async_api import async_playwright
     async with async_playwright() as p:
         links_with_locators = await get_links()
         browser = await p.chromium.launch()
@@ -13,7 +12,6 @@ async def scraping_data():
             url = item["url"]
             site_locators = item["locators"]
             print(f"Processing {url}")
-            
             try:
                 page = await browser.new_page()
                 await page.goto(url)

@@ -1,3 +1,4 @@
+from playwright.async_api import async_playwright
 import asyncio 
 autox_vehicles = {
     "URL" : "https://autoxveiculos.com.br/estoque?utm_source=GoogleAds&utm_medium=Kayron&utm_campaign=SEARCH&ad_id=789081271408&gad_source=1&gad_campaignid=23385700981&gclid=CjwKCAiAnoXNBhAZEiwAnItcG_9aICDqfBno0m_OL_rJq7wgnTMwsEwvBZlvNoBHT3PYMKiqz60L8hoCg-sQAvD_BwE",
@@ -20,7 +21,6 @@ sites = [autox_vehicles] # remember to add the site to the list
 async def get_links():
     links_with_locators = []
     for site in sites:
-        from playwright.async_api import async_playwright
         async with async_playwright() as p:
             browser = await p.chromium.launch()
             page = await browser.new_page()
