@@ -4,7 +4,7 @@ autox_vehicles = {
     "URL" : "https://autoxveiculos.com.br/estoque?utm_source=GoogleAds&utm_medium=Kayron&utm_campaign=SEARCH&ad_id=789081271408&gad_source=1&gad_campaignid=23385700981&gclid=CjwKCAiAnoXNBhAZEiwAnItcG_9aICDqfBno0m_OL_rJq7wgnTMwsEwvBZlvNoBHT3PYMKiqz60L8hoCg-sQAvD_BwE",
     "links_locator": "div.col-md-6 a",
     "prefix": "",  # this site does not need a prefix
-    "price_locator": "R$", # this site has two possible price locators, so we use a list //span[contains(@class, 'price-solo')]/parent::*
+    "price_locator": ["//span[contains(@class, 'price-solo')]/parent::*","//small[contains(text(), 'R$')]/following-sibling::strong"], # this site has two possible price locators, so we use a list
     "name_locator": "div.title h3",
     "year_locator": "div.col-6 p",
     "km_locator": "div.col-6 p",
