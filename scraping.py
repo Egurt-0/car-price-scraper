@@ -18,14 +18,7 @@ async def scraping_data():
                 
                 if site_locators["use_nth"]:
                     names = await page.locator(site_locators["name_locator"]).inner_text()
-                    for locator in site_locators["price_locator"]:
-                        try:
-                            prices = await page.locator(locator).inner_text()
-                            if prices:
-                                break
-                        except Exception as e:
-                            print(f"Price locator {locator} failed: {e}")
-                            continue
+                    prices = await page.get_by_text("price_locator").inner_text()
                     year = await page.locator(site_locators["year_locator"]).nth(site_locators["year_index"]).inner_text()
                     km = await page.locator(site_locators["km_locator"]).nth(site_locators["km_index"]).inner_text()
                     color = await page.locator(site_locators["color_locator"]).nth(site_locators["color_index"]).inner_text()
@@ -44,7 +37,6 @@ async def scraping_data():
                     "km": km,
                     "color": color
                 })
-                print("Saved to json successfully")
                 await page.close()
             except Exception as e:
                 print(f"Error processing {url}: {e}")
@@ -53,7 +45,7 @@ async def scraping_data():
     
     with open("output_scraping.json", "w", encoding="utf-8") as f:
         json.dump(car_info, f, ensure_ascii=False, indent=4)
-
+    print("Saved to json successfully")
 
 if __name__ == "__main__":
     asyncio.run(scraping_data())
