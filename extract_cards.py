@@ -2,7 +2,7 @@ from playwright.async_api import async_playwright
 import asyncio 
 autox_vehicles = {
     "URL" : "https://autoxveiculos.com.br/estoque?utm_source=GoogleAds&utm_medium=Kayron&utm_campaign=SEARCH&ad_id=789081271408&gad_source=1&gad_campaignid=23385700981&gclid=CjwKCAiAnoXNBhAZEiwAnItcG_9aICDqfBno0m_OL_rJq7wgnTMwsEwvBZlvNoBHT3PYMKiqz60L8hoCg-sQAvD_BwE",
-    "links_locator": "div.col-md-6 a",
+    "links_locator": "",
     "prefix": "",  # this site does not need a prefix
     "price_locator": ["//span[contains(@class, 'price-solo')]/parent::*","//small[contains(text(), 'R$')]/following-sibling::strong"], # this site has two possible price locators, so we use a list
     "name_locator": "div.title h3",
@@ -15,7 +15,22 @@ autox_vehicles = {
     "km_index": 2,
     "color_index": 3
 }
+napista = {
+    "URL" : "https://napista.com.br/busca/carro?pn=1",
+    "links_locator": "a.styles_listingCard__TnL78",
+    "prefix": "",  # this site does not need a prefix
+    "price_locator": "https://napista.com.br", # this site has two possible price locators, so we use a list
+    "name_locator": '//*[@id="__main"]/div/div[3]/div/div[2]/div[1]/div/div[1]/div[2]/h1',
+    "year_locator": "div.col-6 p",
+    "km_locator": "div.col-6 p",
+    "color_locator": "div.col-6 p",
+    "use_nth": True,
+    "name_index": "",
+    "year_index": 1,
+    "km_index": 2,
+    "color_index": 3
 
+}
 sites = [autox_vehicles] # remember to add the site to the list
 
 async def get_links():
