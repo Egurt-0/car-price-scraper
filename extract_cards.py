@@ -18,20 +18,20 @@ autox_vehicles = {
 napista = {
     "URL" : "https://napista.com.br/busca/carro?pn=1",
     "links_locator": "a.styles_listingCard__TnL78",
-    "prefix": "",  # this site does not need a prefix
-    "price_locator": "https://napista.com.br", # this site has two possible price locators, so we use a list
-    "name_locator": '//*[@id="__main"]/div/div[3]/div/div[2]/div[1]/div/div[1]/div[2]/h1',
-    "year_locator": "div.col-6 p",
-    "km_locator": "div.col-6 p",
-    "color_locator": "div.col-6 p",
+    "prefix": "https://napista.com.br",  # this site does not need a prefix
+    "price_locator": ['get_by_text("R$").nth(3)'], # this site has two possible price locators, so we use a list
+    "name_locator": 'h1.sc-9bde1185-0',
+    "year_locator": 'div.sc-9bde1185-0',
+    "km_locator": 'div.sc-9bde1185-0',
+    "color_locator": 'div.sc-9bde1185-0',
     "use_nth": True,
     "name_index": "",
     "year_index": 1,
     "km_index": 2,
-    "color_index": 3
+    "color_index": 5
 
 }
-sites = [autox_vehicles] # remember to add the site to the list
+sites = [napista] # remember to add the site to the list
 
 async def get_links():
     links_with_locators = []
