@@ -18,8 +18,8 @@ autox_vehicles = {
 napista = {
     "URL" : "https://napista.com.br/busca/carro?pn=1",
     "links_locator": "a.styles_listingCard__TnL78",
-    "prefix": "https://napista.com.br",  # this site does not need a prefix
-    "price_locator": ['get_by_text("R$").nth(3)'], # this site has two possible price locators, so we use a list
+    "prefix": "https://napista.com.br",
+    "price_locator": ['//*[@id="__main"]/div/div[3]/div/div[2]/div[1]/div/div[1]/div[3]/div/div/div/div/div[1]/div[1]/div/div'], # this site has two possible price locators, so we use a list
     "name_locator": 'h1.sc-9bde1185-0',
     "year_locator": 'div.sc-9bde1185-0',
     "km_locator": 'div.sc-9bde1185-0',

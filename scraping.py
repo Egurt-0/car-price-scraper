@@ -21,7 +21,7 @@ async def scraping_data():
                     prices = None
                     for locator in site_locators["price_locator"]:
                         try:
-                            prices = await page.site(locator).inner_text()
+                            prices = await page.locator.site((locator)).inner_text()
                             if prices:
                                 break
                         except Exception as e:
