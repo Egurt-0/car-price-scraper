@@ -14,7 +14,7 @@ This project leverages the following stack:
 | **JSON** | Data storage and structured output |
 
 ## 🎯 Goal
-The main objective of this project is to **learn web scraping techniques** while building a functional interface for simple price comparison.
+The main objective of this project is to **learn web scraping techniques** while building a functional interface
 
 ---
 
